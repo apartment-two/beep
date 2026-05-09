@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beep-beep</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #1a1a2e;
+        overflow: hidden;
+        font-family: monospace;
+      }
+      canvas {
+        display: block;
+      }
+      #hud {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        opacity: 0.7;
+        pointer-events: none;
+        text-shadow: 0 1px 3px #000;
+      }
+      #speedometer {
+        position: fixed;
+        top: 20px;
+        right: 24px;
+        color: #fff;
+        font-size: 18px;
+        text-align: right;
+        pointer-events: none;
+        text-shadow: 0 1px 4px #000;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DMprnkEB.js"></script>
+  </head>
+  <body>
+    <div id="hud">
+      W/A/S/D or Arrow Keys — Drive · SPACE — Brake · R — Reset
+    </div>
+    <div id="speedometer">0 mph</div>
+  </body>
+</html>
